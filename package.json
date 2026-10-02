@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --port 3001",
     "start": "astro dev --port 3001",
-    "build": "astro build",
+    "build": "astro build && node scripts/prepare-comsoc-assets.mjs",
     "preview": "astro preview",
     "check": "astro check"
   },
