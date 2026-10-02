@@ -1,0 +1,9 @@
+{
+  "titulo": "IEEE ComSoc Global",
+  "url": "https://www.comsoc.org/",
+  "icono": "/img/logos/logo-comsoc.svg",
+  "categoria": "Recursos IEEE",
+  "orden": 2,
+  "destacado": false,
+  "descripcion": "Página internacional de la IEEE Communications Society."
+}

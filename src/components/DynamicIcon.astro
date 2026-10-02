@@ -1,0 +1,29 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  icon: string;
+  class?: string;
+  alt?: string;
+}
+
+const { icon, class: className = "w-6 h-6", alt = "Icon" } = Astro.props;
+
+// Determine if icon is a file path (svg/png) or an Iconify identifier
+const isFilePath = icon.startsWith('/') || icon.endsWith('.png') || icon.endsWith('.svg') || icon.endsWith('.webp');
+
+const resolvedSrc = isFilePath && icon.startsWith('/')
+  ? `${import.meta.env.BASE_URL}/${icon.replace(/^\//, '')}`
+  : icon;
+---
+
+{isFilePath ? (
+  <img 
+    src={resolvedSrc} 
+    alt={alt} 
+    class={`${className} object-contain`} 
+    loading="lazy" 
+  />
+) : (
+  <Icon name={icon} class={className} />
+)}

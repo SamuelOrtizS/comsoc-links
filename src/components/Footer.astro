@@ -1,0 +1,35 @@
+---
+import { Icon } from 'astro-icon/components';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="w-full flex flex-col items-center justify-center gap-4 mt-12 pb-6 text-center text-xs text-text-muted">
+  <div class="h-px w-24 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+  <div class="flex items-center gap-4 text-text-secondary">
+    <a
+      href="https://comsoc.ieeeunivalle.link/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-ieee-comsoc-cyan transition-colors flex items-center gap-1 font-medium"
+    >
+      <Icon name="mdi:web" class="w-4 h-4" />
+      <span>Sitio Oficial</span>
+    </a>
+    <span>&bull;</span>
+    <a
+      href="https://github.com/SamuelOrtizS/comsoc-links"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-ieee-comsoc-cyan transition-colors flex items-center gap-1 font-medium"
+    >
+      <Icon name="mdi:github" class="w-4 h-4" />
+      <span>GitHub</span>
+    </a>
+  </div>
+
+  <p>
+    &copy; {currentYear} IEEE ComSoc Universidad del Valle Student Branch Chapter.<br />
+    Todos los derechos reservados.
+  </p>
+</footer>

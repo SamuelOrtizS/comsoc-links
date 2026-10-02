@@ -1,0 +1,9 @@
+{
+  "titulo": "Próximos Eventos",
+  "url": "https://comsoc.ieeeunivalle.link/eventos",
+  "icono": "material-symbols:event-available-outline",
+  "categoria": "Eventos & Convocatorias",
+  "orden": 1,
+  "destacado": false,
+  "descripcion": "Talleres, webinars, competencias técnicas y reuniones del capítulo."
+}

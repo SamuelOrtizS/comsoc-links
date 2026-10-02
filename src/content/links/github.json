@@ -1,0 +1,9 @@
+{
+  "titulo": "Organización en GitHub",
+  "url": "https://github.com/SamuelOrtizS/comsoc-web",
+  "icono": "simple-icons:github",
+  "categoria": "Redes Sociales",
+  "orden": 3,
+  "destacado": false,
+  "descripcion": "Repositorios de código abierto, proyectos técnicos y desarrollo web."
+}

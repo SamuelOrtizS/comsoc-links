@@ -1,0 +1,9 @@
+{
+  "titulo": "Convocatorias Abiertas",
+  "url": "https://comsoc.ieeeunivalle.link/convocatorias",
+  "icono": "material-symbols:campaign-outline",
+  "categoria": "Eventos & Convocatorias",
+  "orden": 2,
+  "destacado": false,
+  "descripcion": "Coordinaciones de nuestros diferentes comités operativos."
+}

@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CategorySection from '../components/CategorySection.astro';
+import { getAllLinks } from '../utils/loadLinks';
+
+const categories = getAllLinks();
+---
+
+<BaseLayout>
+  <!-- Chapter Avatar & Title Header -->
+  <Header />
+
+  <!-- Links grouped by Category -->
+  <main class="w-full flex flex-col gap-6 my-2">
+    {categories.length > 0 ? (
+      categories.map((group) => (
+        <CategorySection group={group} />
+      ))
+    ) : (
+      <div class="glass-panel p-6 rounded-2xl text-center text-text-secondary text-sm my-8">
+        No se encontraron enlaces en <code class="text-ieee-comsoc-cyan font-mono">src/content/links/</code>.
+      </div>
+    )}
+  </main>
+
+  <!-- Footer Section -->
+  <Footer />
+</BaseLayout>

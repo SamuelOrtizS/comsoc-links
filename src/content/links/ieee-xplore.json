@@ -1,0 +1,9 @@
+{
+  "titulo": "IEEE Xplore Digital Library",
+  "url": "https://ieeexplore.ieee.org/",
+  "icono": "material-symbols:menu-book-outline",
+  "categoria": "Recursos IEEE",
+  "orden": 1,
+  "destacado": false,
+  "descripcion": "Acceso a millones de artículos científicos, estándares y conferencias técnicas."
+}

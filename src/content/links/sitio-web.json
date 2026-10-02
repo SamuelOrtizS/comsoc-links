@@ -1,0 +1,9 @@
+{
+  "titulo": "Sitio Web Oficial",
+  "url": "https://comsoc.ieeeunivalle.link/",
+  "icono": "mdi:web",
+  "categoria": "Oficial",
+  "orden": 1,
+  "destacado": true,
+  "descripcion": "Portal principal de IEEE ComSoc Univalle con eventos, proyectos y convocatorias."
+}

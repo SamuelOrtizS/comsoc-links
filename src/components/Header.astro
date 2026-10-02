@@ -1,0 +1,35 @@
+---
+---
+
+<header class="flex flex-col items-center text-center my-6 sm:my-8 w-full">
+  <!-- Glowing avatar container -->
+  <div class="relative group cursor-pointer mb-4">
+    <div
+      class="absolute -inset-1.5 bg-gradient-to-r from-ieee-blue via-ieee-comsoc-cyan to-accent-cyan rounded-3xl blur-lg opacity-60 group-hover:opacity-100 transition duration-700 group-hover:duration-300"
+    ></div>
+    <div
+      class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl p-4 bg-bg-secondary/90 border border-white/10 flex items-center justify-center backdrop-blur-xl shadow-2xl transition-transform duration-300 group-hover:scale-105"
+    >
+      <img
+        src={`${import.meta.env.BASE_URL}/img/logos/logo-comsoc.svg`.replace('//', '/')}
+        alt="IEEE ComSoc Univalle Logo"
+        class="w-full h-full object-contain filter drop-shadow-[0_0_10px_rgba(0,174,239,0.3)]"
+        loading="eager"
+      />
+    </div>
+  </div>
+
+  <!-- Title & Subtitle -->
+  <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-2">
+    IEEE ComSoc <span class="text-transparent bg-clip-text bg-gradient-to-r from-ieee-comsoc-cyan to-ieee-cyan">Univalle</span>
+  </h1>
+
+  <p class="text-sm sm:text-base text-text-secondary max-w-md font-medium leading-relaxed">
+    Capítulo Estudiantil de la Sociedad de Comunicaciones de IEEE · Universidad del Valle
+  </p>
+
+  <div class="mt-3 flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-gray-300">
+    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span>Comunidad Activa &middot; Cali, Colombia</span>
+  </div>
+</header>

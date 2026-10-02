@@ -1,0 +1,27 @@
+---
+import type { CategoryGroup } from '../utils/loadLinks';
+import LinkCard from './LinkCard.astro';
+
+interface Props {
+  group: CategoryGroup;
+}
+
+const { group } = Astro.props;
+---
+
+<section class="w-full flex flex-col gap-3">
+  <!-- Category Title Header with gradient divider -->
+  <div class="flex items-center gap-3 pt-2">
+    <h2 class="text-xs font-bold uppercase tracking-wider text-ieee-comsoc-cyan/90 font-formata">
+      {group.name}
+    </h2>
+    <div class="h-px flex-1 bg-gradient-to-r from-ieee-comsoc-cyan/30 via-white/10 to-transparent"></div>
+  </div>
+
+  <!-- Cards Stack -->
+  <div class="flex flex-col gap-3">
+    {group.links.map((link) => (
+      <LinkCard link={link} />
+    ))}
+  </div>
+</section>
