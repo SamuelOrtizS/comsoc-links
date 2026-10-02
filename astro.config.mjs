@@ -5,11 +5,9 @@ import icon from 'astro-icon';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ieeeunivalle.link',
-  // The custom domain serves the GitHub Pages artifact from its root.
-  base: '/',
+  base: '/ComSoc',
   output: 'static',
   redirects: {
-    '/comsoc': '/ComSoc',
     '/links': '/ComSoc',
     '/comsoc-links': '/ComSoc',
     '/links-comsoc': '/ComSoc',
