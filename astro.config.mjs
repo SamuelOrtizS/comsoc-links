@@ -7,9 +7,6 @@ export default defineConfig({
   site: 'https://ieeeunivalle.link',
   base: '/ComSoc',
   output: 'static',
-  redirects: {
-    '/': '/ComSoc',
-  },
   vite: {
     plugins: [tailwindcss()],
   },
