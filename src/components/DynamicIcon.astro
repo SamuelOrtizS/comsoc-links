@@ -10,7 +10,8 @@ interface Props {
 const { icon, class: className = "w-6 h-6", alt = "Icon" } = Astro.props;
 
 // Determine if icon is a file path (svg/png) or an Iconify identifier
-const isFilePath = icon.startsWith('/') || icon.endsWith('.png') || icon.endsWith('.svg') || icon.endsWith('.webp');
+const iconPath = icon.split(/[?#]/, 1)[0];
+const isFilePath = icon.startsWith('/') || /\.(png|svg|webp)$/i.test(iconPath);
 
 const resolvedSrc = isFilePath && icon.startsWith('/')
   ? `${import.meta.env.BASE_URL}/${icon.replace(/^\//, '')}`
