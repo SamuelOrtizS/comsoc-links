@@ -8,9 +8,7 @@ export default defineConfig({
   base: '/ComSoc',
   output: 'static',
   redirects: {
-    '/links': '/ComSoc',
-    '/comsoc-links': '/ComSoc',
-    '/links-comsoc': '/ComSoc',
+    '/': '/ComSoc',
   },
   vite: {
     plugins: [tailwindcss()],
